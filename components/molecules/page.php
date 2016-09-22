@@ -1,0 +1,1 @@
+<!-- components/pages/page.php -->

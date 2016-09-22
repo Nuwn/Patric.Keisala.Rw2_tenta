@@ -1,0 +1,12 @@
+/* scss/organisms/_main.scss */
+.main{
+
+    @media screen and (min-width: 640px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+}

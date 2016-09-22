@@ -1,0 +1,16 @@
+/* scss/molecules/_navigation.scss */
+.navigation{
+    display: flex;
+    height: 60px; 
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20px;
+
+}
+.dropdown{
+    display: none;
+    @media screen and (min-width:960px){
+        display: flex;
+        margin-right: 30px;
+    }
+}

@@ -1,0 +1,16 @@
+/* scss/atoms/_Footer-image.scss */
+.footer__image {    
+    height: 60px; 
+    width: 60px;
+    
+    @media screen and (min-width: 640px) {
+        height: 80px; 
+        width: 80px;     
+    }
+
+    @at-root #{&} img{ 
+        height: 100%; 
+        border-radius: 10px; 
+
+    }
+}

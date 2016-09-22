@@ -1,0 +1,43 @@
+/* scss/organisms/_footer.scss */
+.footer{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+    @at-root #{&}__right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @at-root #{&}__text{    
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            
+        }
+    }
+    @media screen and (min-width:960px) {
+        
+        flex-direction: row;
+        padding-left:150px;
+        padding-right:150px;
+
+
+        @at-root #{&}__right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+        @at-root #{&}__text {
+             width: 500px; 
+        }
+
+        }
+    }
+}

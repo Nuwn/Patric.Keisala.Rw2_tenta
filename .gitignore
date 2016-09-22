@@ -1,0 +1,5 @@
+.idea/
+atomic-core/node_modules/
+node_modules/
+.vscode/
+.tenta/

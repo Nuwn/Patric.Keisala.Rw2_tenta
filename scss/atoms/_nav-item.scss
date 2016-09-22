@@ -1,0 +1,15 @@
+/* scss/atoms/_nav-item.scss */
+.nav__item{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @at-root #{&} i {
+        margin: 10px;
+    }
+    @at-root #{&} p {
+        padding-top: 2px;
+    }
+
+
+}

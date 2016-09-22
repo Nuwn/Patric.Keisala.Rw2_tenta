@@ -1,0 +1,13 @@
+/* scss/molecules/_form.scss */
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    width: 90%;
+    @media screen and (min-width:960px) {
+    order: 2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 500px; 
+    }
+} 

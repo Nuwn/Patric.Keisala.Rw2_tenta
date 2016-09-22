@@ -1,0 +1,24 @@
+/* scss/atoms/_bording-pass-header.scss */
+.bordingpass-header {
+    display: flex;
+    justify-content: space-between;  
+    background-color: #e8e8e8;  
+    height: 60px;
+    align-items: center;   
+    width: 100%;
+    @at-root #{&} h2 {
+        margin: 0;    
+        padding-left:20px;     
+    }
+    @at-root #{&} img {
+        height: 60px;       
+    }
+    @media screen and (min-width: 960px) {
+        flex-direction: column;
+        height: auto;
+        @at-root #{&} h2 {
+            margin: 0;    
+            padding-left:0;     
+        }
+    }
+}

@@ -1,0 +1,384 @@
+/* scss/base/_Background.scss */
+@import 'https://fonts.googleapis.com/css?family=Fira+Sans:400,700';
+.bg3399ff {
+  background-color: #3399ff; }
+
+.bg3c71e0 {
+  background-color: #3c71e0; }
+
+.bgffffff {
+  background-color: #ffffff; }
+
+.bgf0f0f0 {
+  background-color: #f0f0f0; }
+
+.bg3267d6 {
+  background-color: #3267d6; }
+
+.bgf0f2f3 {
+  background-color: #f0f2f3; }
+
+.bge8e8e8 {
+  background-color: #e8e8e8; }
+
+.bgfafafa {
+  background-color: #fafafa; }
+
+.bg13181b {
+  background-color: #13181b; }
+
+.bg3f81ff {
+  background-color: #3f81ff; }
+
+.BGdisplayBoxContainer {
+  display: flex;
+  justify-content: space-around; }
+
+.BGdisplayBox {
+  height: 120px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #999;
+  padding: 5px; }
+  .BGdisplayBox__item {
+    min-height: 80px;
+    min-width: 80px; }
+  .BGdisplayBox p {
+    font-size: 12px; }
+
+/* scss/base/_Text-Colors.scss */
+.c2e2d33 {
+  color: #2e2d33; }
+
+.cffffff {
+  color: #ffffff; }
+
+.c605f65 {
+  color: #605f65; }
+
+.c4285f4 {
+  color: #4285f4; }
+
+.c000000 {
+  color: #000000; }
+
+.c585b63 {
+  color: #585b63; }
+
+.c3267d6 {
+  color: #3267d6; }
+
+.cf7f7f7 {
+  color: #f7f7f7; }
+
+/* scss/base/_Font.scss */
+p {
+  font-size: 14px;
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  font-size: 21px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0; }
+
+h2 {
+  font-size: 28px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0; }
+
+h3 {
+  font-size: 42px;
+  font-weight: 700;
+  padding: 0;
+  margin: 0; }
+
+/* scss/base/_icons.scss */
+.fa {
+  color: white; }
+
+/* scss/base/_body.scss */
+body {
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #e8e8e8;
+  padding: 0;
+  margin: 0; }
+
+/* scss/atoms/_Title.scss */
+/* scss/atoms/_Flexcard-image.scss */
+.flexcard__image img {
+  width: 100%;
+  height: auto; }
+
+/* scss/atoms/_Flexcard-text.scss */
+.flexcard__text {
+  padding: 20px; }
+
+/* scss/atoms/_nav-item.scss */
+.nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; }
+  .nav__item i {
+    margin: 10px; }
+  .nav__item p {
+    padding-top: 2px; }
+
+/* scss/atoms/_nav-icon.scss */
+.nav__icon {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  @media screen and (min-width: 960px) {
+    .nav__icon {
+      display: none; } }
+
+.fa-bars {
+  font-size: 38px; }
+
+/* scss/atoms/_Flexcard-header.scss */
+.flexcardHeader {
+  display: flex;
+  height: 60px;
+  max-height: 60px;
+  width: 100%; }
+  .flexcardHeader__logo {
+    width: 100px; }
+  .flexcardHeader img {
+    height: 100%; }
+  .flexcardHeader__name h1 {
+    margin: 0; }
+
+/* scss/atoms/_Footer-image.scss */
+.footer__image {
+  height: 60px;
+  width: 60px; }
+  @media screen and (min-width: 640px) {
+    .footer__image {
+      height: 80px;
+      width: 80px; } }
+  .footer__image img {
+    height: 100%;
+    border-radius: 10px; }
+
+/* scss/atoms/_Footer-text.scss */
+/* scss/atoms/_Footer-input.scss */
+.footer_input {
+  border: 0;
+  height: 40px;
+  width: 100%;
+  font-size: 11px;
+  margin-top: 5px;
+  color: #999;
+  border-radius: 0; }
+
+/* scss/atoms/_Footer-form-btn.scss */
+.footer-form__button {
+  height: 40px;
+  width: 100%;
+  background-color: #3399ff;
+  font-size: 11px;
+  color: #ffffff;
+  border-radius: 0;
+  border: 0;
+  margin-top: 5px; }
+
+/* scss/atoms/_header-text.scss */
+.header-text {
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .header-text p {
+    margin: 2px;
+    padding: 2px; }
+    @media screen and (min-width: 640px) {
+      .header-text p {
+        font-size: 21px; } }
+
+/* scss/atoms/_header-title.scss */
+.header-title_container {
+  display: flex;
+  border: 2px solid #ffffff; }
+  .header-title_container__destination {
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .header-title_container__destination p {
+      padding: 0;
+      margin: 0;
+      margin-top: 2px; }
+      @media screen and (min-width: 640px) {
+        .header-title_container__destination p {
+          font-size: 28px; } }
+  .header-title_container__unknown {
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #fff; }
+    .header-title_container__unknown p {
+      padding: 0;
+      margin: 0;
+      margin-top: 2px; }
+      @media screen and (min-width: 640px) {
+        .header-title_container__unknown p {
+          font-size: 28px; } }
+
+/* scss/atoms/_bording-pass-header.scss */
+.bordingpass-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e8e8e8;
+  height: 60px;
+  align-items: center;
+  width: 100%; }
+  .bordingpass-header h2 {
+    margin: 0;
+    padding-left: 20px; }
+  .bordingpass-header img {
+    height: 60px; }
+  @media screen and (min-width: 960px) {
+    .bordingpass-header {
+      flex-direction: column;
+      height: auto; }
+      .bordingpass-header h2 {
+        margin: 0;
+        padding-left: 0; } }
+
+/* scss/molecules/_header.scss */
+.header_container {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/airplane.jpg");
+  background-size: 100%; }
+  @media screen and (max-width: 400px) {
+    .header_container {
+      background-size: 400px; } }
+  @media screen and (min-width: 640px) {
+    .header_container {
+      height: 300px; } }
+  @media screen and (min-width: 640px) {
+    .header_container {
+      height: 400px; } }
+
+/* scss/molecules/_flexcard.scss */
+.flexcard {
+  margin: 20px; }
+  @media screen and (min-width: 640px) {
+    .flexcard {
+      width: 48%;
+      margin: 5px; } }
+  @media screen and (min-width: 960px) {
+    .flexcard {
+      width: 220px; } }
+
+/* scss/molecules/_border-pass.scss */
+/* scss/molecules/_form.scss */
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 90%; }
+  @media screen and (min-width: 960px) {
+    .form {
+      order: 2;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      width: 500px; } }
+
+/* scss/molecules/_footer-extra.scss */
+.footer-img-container {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin-top: 30px;
+  flex-flow: wrap; }
+  @media screen and (min-width: 960px) {
+    .footer-img-container {
+      width: 400px;
+      margin-top: 0; } }
+
+/* scss/molecules/_navigation.scss */
+.navigation {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px; }
+
+.dropdown {
+  display: none; }
+  @media screen and (min-width: 960px) {
+    .dropdown {
+      display: flex;
+      margin-right: 30px; } }
+
+/* scss/molecules/_airbus.scss */
+.airbus {
+  display: none;
+  background-color: #ffffff; }
+  .airbus__text {
+    width: 48%;
+    padding: 20px; }
+  @media screen and (min-width: 640px) {
+    .airbus {
+      display: flex; } }
+
+/* scss/organisms/_header.scss */
+@media screen and (min-width: 960px) {
+  .nav-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #3267d6; } }
+
+/* scss/organisms/_main.scss */
+@media screen and (min-width: 640px) {
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px; } }
+
+/* scss/organisms/_footer.scss */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  .footer__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .footer__right__text {
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px; }
+  @media screen and (min-width: 960px) {
+    .footer {
+      flex-direction: row;
+      padding-left: 150px;
+      padding-right: 150px; }
+      .footer__right {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column-reverse;
+        margin-bottom: 10px; }
+        .footer__right__text {
+          width: 500px; } }
+
+/* scss/pages/_page.scss */

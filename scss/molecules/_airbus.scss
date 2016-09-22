@@ -1,0 +1,14 @@
+/* scss/molecules/_airbus.scss */
+.airbus {
+    display: none;
+    background-color: #ffffff;
+    
+    @at-root #{&}__text {
+        width: 48%;
+        padding: 20px; 
+    }
+
+    @media screen and (min-width:640px){
+        display: flex;
+    }
+}

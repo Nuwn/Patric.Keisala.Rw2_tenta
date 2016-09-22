@@ -1,0 +1,9 @@
+/* scss/organisms/_header.scss */
+.nav-container{
+    @media screen and (min-width:960px) {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        background-color: #3267d6;
+    }
+}

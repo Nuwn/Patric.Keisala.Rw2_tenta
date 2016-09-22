@@ -1,0 +1,1 @@
+<!-- components/base/icons.php --><i aria-hidden="true" class="fa fa-home"></i><i aria-hidden="true" class="fa fa-plane"></i><i aria-hidden="true" class="fa fa-info"></i><i aria-hidden="true" class="fa fa-user"></i>
