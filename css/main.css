@@ -31,15 +31,25 @@
   background-color: #3f81ff; }
 
 .BGdisplayBoxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
 
 .BGdisplayBox {
   height: 120px;
   width: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px solid #999;
   padding: 5px; }
   .BGdisplayBox__item {
@@ -120,9 +130,15 @@ body {
 
 /* scss/atoms/_nav-item.scss */
 .nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: flex-start; }
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
   .nav__item i {
     margin: 10px; }
   .nav__item p {
@@ -132,9 +148,15 @@ body {
 .nav__icon {
   height: 100%;
   width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media screen and (min-width: 960px) {
     .nav__icon {
       display: none; } }
@@ -144,6 +166,8 @@ body {
 
 /* scss/atoms/_Flexcard-header.scss */
 .flexcardHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 60px;
   max-height: 60px;
@@ -191,8 +215,12 @@ body {
 
 /* scss/atoms/_header-text.scss */
 .header-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 5px;
   background-color: rgba(255, 255, 255, 0.5); }
   .header-text p {
@@ -204,6 +232,8 @@ body {
 
 /* scss/atoms/_header-title.scss */
 .header-title_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border: 2px solid #ffffff; }
   .header-title_container__destination {
@@ -232,11 +262,17 @@ body {
 
 /* scss/atoms/_bording-pass-header.scss */
 .bordingpass-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: #e8e8e8;
   height: 60px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%; }
   .bordingpass-header h2 {
     margin: 0;
@@ -245,7 +281,10 @@ body {
     height: 60px; }
   @media screen and (min-width: 960px) {
     .bordingpass-header {
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       height: auto; }
       .bordingpass-header h2 {
         margin: 0;
@@ -253,12 +292,21 @@ body {
 
 /* scss/molecules/_header.scss */
 .header_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 200px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-image: url("../images/airplane.jpg");
   background-size: 100%; }
   @media screen and (max-width: 400px) {
@@ -285,24 +333,35 @@ body {
 /* scss/molecules/_border-pass.scss */
 /* scss/molecules/_form.scss */
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin-top: 20px;
   width: 90%; }
   @media screen and (min-width: 960px) {
     .form {
-      order: 2;
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2;
       margin-top: 20px;
       margin-bottom: 10px;
       width: 500px; } }
 
 /* scss/molecules/_footer-extra.scss */
 .footer-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 90%;
   margin-top: 30px;
-  flex-flow: wrap; }
+  -ms-flex-flow: wrap;
+      flex-flow: wrap; }
   @media screen and (min-width: 960px) {
     .footer-img-container {
       width: 400px;
@@ -310,16 +369,24 @@ body {
 
 /* scss/molecules/_navigation.scss */
 .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 60px;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding-left: 20px; }
 
 .dropdown {
   display: none; }
   @media screen and (min-width: 960px) {
     .dropdown {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       margin-right: 30px; } }
 
@@ -332,36 +399,65 @@ body {
     padding: 20px; }
   @media screen and (min-width: 640px) {
     .airbus {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex; } }
 
 /* scss/organisms/_header.scss */
 @media screen and (min-width: 960px) {
   .nav-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: #3267d6; } }
 
 /* scss/organisms/_main.scss */
 @media screen and (min-width: 640px) {
   .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px; } }
 
 /* scss/organisms/_footer.scss */
 .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
   .footer__right {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .footer__right__text {
       padding-left: 30px;
       padding-right: 30px;
@@ -369,14 +465,25 @@ body {
       padding-bottom: 10px; }
   @media screen and (min-width: 960px) {
     .footer {
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
       padding-left: 150px;
       padding-right: 150px; }
       .footer__right {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-direction: column-reverse;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: column-reverse;
+                flex-direction: column-reverse;
         margin-bottom: 10px; }
         .footer__right__text {
           width: 500px; } }

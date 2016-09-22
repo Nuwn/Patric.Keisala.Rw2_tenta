@@ -1,5 +1,6 @@
 # Patric.Keisala.Rw2_tenta
 
+## Setup:
 #### Start Mamp, xampp or other local server.
 #### Clone the project into the local server folder.
 
@@ -11,7 +12,7 @@
 #### 4. To display the style-guide navigate to 'http://127.0.0.1/atomic-docs-master/atomic-core'
 
 ## TESTING with Visual Regression Testing
-#### 1. in root folder type "npm run reference", and then "npm run test"
+#### 1. in root folder type "npm run reference", and then "npm run test", will show difference between autoprefixed css and without
 
 ## TESTING with Gulp-Louis
 #### not implemented
